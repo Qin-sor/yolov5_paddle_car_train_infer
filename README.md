@@ -8,8 +8,8 @@
 # Dependencies
 * All is in requirements.txt file.
 # Pre-Start
-A conda env for this prj is recommended, type follow code to create one with the dependencies.
-```commandline
+* A conda env for this prj is recommended, type follow code to create one with the dependencies.
+```shell
 conda create --name put_your_env_name_here --file requirements_conda.txt
 ```
 It is recommended but not necessary.
@@ -29,7 +29,8 @@ GPUtil==1.4.0
 
 ## 2. Train Model
 ### 1. Data and Dataset Preparation
-* Down
+* Downloading the [VOCData and weights for four types of vehicle](https://pan.baidu.com/s/1g9iPMoem3XJkQC1gdUW23g?pwd=8mw3) due to the storage of github.
+* After the unzip, move the VOCData.zip to path "/work/VOCData/" and move the yolov5s.pdparams (the model which you need) to the path "/work/weights/"
 * Execute the following code snippets to extract and move the dataset to the location consistent with the one set in code.
 ```commandline
 unzip -q ../data/VOCData.zip -d ./
