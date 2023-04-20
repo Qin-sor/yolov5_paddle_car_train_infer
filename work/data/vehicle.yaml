@@ -1,0 +1,7 @@
+train: ./train.txt  # voc_annotation.py生成的train.txt的路径
+val: ./val.txt   # voc_annotation.py生成的val.txt的路径
+test: ./test.txt   # voc_annotation.py生成的val.txt的路径
+
+# Classes
+nc: 4  # number of classes
+names: ['car','bus','van','others']  # class names
