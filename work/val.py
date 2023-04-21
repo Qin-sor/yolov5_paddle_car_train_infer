@@ -1,4 +1,3 @@
-# YOLOv5 reproduction 🚀 by GuoQuanhao
 """
 Validate a trained YOLOv5 model accuracy on a custom dataset
 

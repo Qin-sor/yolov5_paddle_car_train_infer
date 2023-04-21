@@ -1,4 +1,3 @@
-# YOLOv5 reproduction 🚀 by GuoQuanhao
 """
 Activation functions
 """

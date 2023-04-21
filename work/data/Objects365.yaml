@@ -1,4 +1,3 @@
-# YOLOv5 reproduction 🚀 by GuoQuanhao
 # Objects365 dataset https://www.objects365.org/
 # Example usage: python train.py --data Objects365.yaml
 # parent

@@ -1,4 +1,3 @@
-# YOLOv5 reproduction 🚀 by GuoQuanhao
 """
 Dataloaders and dataset utils
 """

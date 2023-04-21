@@ -41,7 +41,7 @@ mv VOCData/JPEGImages VOCData/images
 ```
 * Execute the following code snippets to convert VOC format dataset to YOLOv5 standard format.
 ```angular2html
-python work/voc2yolo.py
+python /voc2yolo.py
 ```
 **Note: The execution path of the code above all is the current directory(under the 'work/' folder)**
 

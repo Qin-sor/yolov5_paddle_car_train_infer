@@ -1,5 +1,3 @@
-# YOLOv5 reproduction 🚀 by GuoQuanhao
-
 from urllib.request import urlopen, Request
 import tempfile
 import hashlib

@@ -1,4 +1,3 @@
-# YOLOv5 reproduction 🚀 by GuoQuanhao
 # Argoverse-HD dataset (ring-front-center camera) http://www.cs.cmu.edu/~mengtial/proj/streaming/
 # Example usage: python train.py --data Argoverse.yaml
 # parent

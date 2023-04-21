@@ -1,5 +1,3 @@
-# YOLOv5 reproduction 🚀 by GuoQuanhao
-
 import paddle
 import paddle.nn as nn
 from paddle.nn.layer.conv import _ConvNd

@@ -1,4 +1,3 @@
-# YOLOv5 reproduction 🚀 by GuoQuanhao
 # SKU-110K retail items dataset https://github.com/eg4000/SKU110K_CVPR19
 # Example usage: python train.py --data SKU-110K.yaml
 # parent

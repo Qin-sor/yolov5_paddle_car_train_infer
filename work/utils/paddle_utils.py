@@ -1,4 +1,3 @@
-# YOLOv5 🚀 reproduction by Quanhao Guo
 """
 Paddle utils
 """

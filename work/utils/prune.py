@@ -1,5 +1,3 @@
-# YOLOv5 reproduction 🚀 by GuoQuanhao
-
 r"""
 Pruning methods
 """

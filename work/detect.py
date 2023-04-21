@@ -1,4 +1,3 @@
-# YOLOv5 reproduction 🚀 by GuoQuanhao
 """
 Run inference on images, videos, directories, streams, etc.
 

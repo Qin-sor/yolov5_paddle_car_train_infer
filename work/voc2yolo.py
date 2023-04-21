@@ -1,39 +1,39 @@
 '''
 stage I : get all names of photos and save them in files
 '''
-# import os
-# import random
-# trainval_percent = 0.1
-# train_percent = 0.9
-# xmlfilepath = './VOCData/Annotations'  #xml文件存放地址
-# if not os.path.exists('./VOCData/ImageSets/'):
-#     os.makedirs('./VOCData/ImageSets/')
-#
-# total_xml = os.listdir(xmlfilepath)
-# num = len(total_xml)
-# list = range(num)
-# tv = int(num * trainval_percent)
-# tr = int(tv * train_percent)
-# trainval = random.sample(list, tv)
-# train = random.sample(trainval, tr)
-# ftrainval = open('./VOCData/ImageSets/trainval.txt', 'w')
-# ftest = open('./VOCData/ImageSets/test.txt', 'w')
-# ftrain = open('./VOCData/ImageSets/train.txt', 'w')
-# fval = open('./VOCData/ImageSets/val.txt', 'w')
-# for i in list:
-#     name = total_xml[i][:-4] + '\n'
-#     if i in trainval:
-#         ftrainval.write(name)
-#         if i in train:
-#             ftest.write(name)
-#         else:
-#             fval.write(name)
-#     else:
-#         ftrain.write(name)
-# ftrainval.close()
-# ftrain.close()
-# fval.close()
-# ftest.close()
+import os
+import random
+trainval_percent = 0.1
+train_percent = 0.9
+xmlfilepath = './VOCData/Annotations'  #xml文件存放地址
+if not os.path.exists('./VOCData/ImageSets/'):
+    os.makedirs('./VOCData/ImageSets/')
+
+total_xml = os.listdir(xmlfilepath)
+num = len(total_xml)
+list = range(num)
+tv = int(num * trainval_percent)
+tr = int(tv * train_percent)
+trainval = random.sample(list, tv)
+train = random.sample(trainval, tr)
+ftrainval = open('./VOCData/ImageSets/trainval.txt', 'w')
+ftest = open('./VOCData/ImageSets/test.txt', 'w')
+ftrain = open('./VOCData/ImageSets/train.txt', 'w')
+fval = open('./VOCData/ImageSets/val.txt', 'w')
+for i in list:
+    name = total_xml[i][:-4] + '\n'
+    if i in trainval:
+        ftrainval.write(name)
+        if i in train:
+            ftest.write(name)
+        else:
+            fval.write(name)
+    else:
+        ftrain.write(name)
+ftrainval.close()
+ftrain.close()
+fval.close()
+ftest.close()
 
 '''
 stage II : to create test.txt, train.txt and the val.txt
@@ -92,3 +92,8 @@ for image_set in sets:
         list_file.write(Imgpath+'/%s.jpg\n' % (image_id))
         convert_annotation(image_id)
     list_file.close()
+
+import shutil
+shutil.move("./VOCData/test.txt", "./")
+shutil.move("./VOCData/train.txt", "./")
+shutil.move("./VOCData/val.txt", "./")
