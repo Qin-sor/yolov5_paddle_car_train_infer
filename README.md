@@ -10,7 +10,7 @@
 # Pre-Start
 * A conda env for this prj is recommended, type follow code to create one with the dependencies.
 ```shell
-conda create --name put_your_env_name_here --file requirements_conda.txt
+conda env create -f ../env.yaml
 ```
 It is recommended but not necessary.
 # Start
@@ -48,7 +48,7 @@ python /voc2yolo.py
 
 ## 2. Start to train
 ### Before Train
-* To make your project work successfully,you should install the [Arial.ttf](https://github.com/GuoQuanhao/YOLOv5-Paddle/releases/download/v1.0/Arial.ttf),and move it to you path ```~/.config/yolov5_dir```, specifilly in utils.general.py file's function namely **user_config_dir**
+* To make your project work successfully,you should install the [Arial.ttf](https://github.com/Qin-sor/yolov5_paddle_car_train_infer/tree/master/data/Arial.ttf),and move it to you path ```~/.config/yolov5_dir```, specifilly in utils.general.py file's function namely **user_config_dir**
 ### 2.2 training the model
 My local machine is nuvo-8108GC 2080 Super and the other informations like memory are as follows:
 ```
