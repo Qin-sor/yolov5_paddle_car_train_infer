@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4e3e9b86-65db-4d23-b246-63d960e21455" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/yolov5_paddle_car_train_infer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/yolov5_paddle_car_train_infer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/put_your_VOCdata_zip_here" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../requirements_conda.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Argoverse.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/Argoverse.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/GlobalWheat2020.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/GlobalWheat2020.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Objects365.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/Objects365.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/SKU-110K.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/SKU-110K.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/VOC.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/VOC.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/VisDrone.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/VisDrone.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/coco128.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/coco128.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hyps/hyp.finetune.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hyps/hyp.finetune_objects365.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hyps/hyp.scratch-high.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/hyps/hyp.scratch-high.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hyps/hyp.scratch-low.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/hyps/hyp.scratch-low.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hyps/hyp.scratch-med.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/hyps/hyp.scratch-med.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/hyps/hyp.scratch.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/test1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/test2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/images/test3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/scripts/download_weights.sh" beforeDir="false" afterPath="$PROJECT_DIR$/data/scripts/download_weights.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/scripts/get_coco.sh" beforeDir="false" afterPath="$PROJECT_DIR$/data/scripts/get_coco.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/scripts/get_coco128.sh" beforeDir="false" afterPath="$PROJECT_DIR$/data/scripts/get_coco128.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/xView.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/xView.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/experimental.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/experimental.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/anchors.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/anchors.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov3-spp.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov3-spp.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov3-tiny.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov3-tiny.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov3.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov3.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov5-bifpn.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov5-bifpn.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov5-fpn.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov5-fpn.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov5-p2.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov5-p2.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov5-p6.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov5-p6.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov5-p7.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov5-p7.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov5-panet.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov5-panet.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov5l6.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov5l6.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov5m6.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov5m6.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov5n6.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov5n6.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov5s-ghost.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov5s-ghost.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov5s-transformer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov5s-transformer.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov5s6.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov5s6.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/hub/yolov5x6.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/hub/yolov5x6.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/results.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/yolo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/yolov5l.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/yolov5l.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/yolov5m.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/yolov5m.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/yolov5n.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/yolov5n.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/yolov5s.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/yolov5s.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/yolov5x.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/models/yolov5x.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/activations.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/activations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/augmentations.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/augmentations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/autoanchor.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/autoanchor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/autobatch.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/autobatch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/aws/resume.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/aws/resume.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/callbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/callbacks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/datasets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/download_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/downloads.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/downloads.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/flask_rest_api/example_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/flask_rest_api/example_request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/flask_rest_api/restapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/flask_rest_api/restapi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/general.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/general.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/loggers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/loggers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/loggers/wandb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/loggers/wandb/log_dataset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/loggers/wandb/sweep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/loggers/wandb/sweep.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/loggers/wandb/wandb_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/loggers/wandb/wandb_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/metrics.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/paddle_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/paddle_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/plots.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/plots.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/profile_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/profile_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/prune.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/val.py" beforeDir="false" afterPath="$PROJECT_DIR$/val.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/you_can_put_urself_model_here" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2P2o8DTJR21WX9wbKFDQmsXuGKa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e3e9b86-65db-4d23-b246-63d960e21455" name="Changes" comment="" />
+      <created>1682664376798</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682664376798</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

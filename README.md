@@ -1,6 +1,6 @@
-# Vehicle Detection Implemented with YOLOv5 and Paddle
-* Vehicle Detection Implemented with YOLOv5 and Paddle, Including trainning and testing, Original Project Referenced [Link](https://github.com/GuoQuanhao/YOLOv5-Paddle)，and modify configurtion files and datasets based on this implemention
-* This project provides 3 pre-trained models, namely YOLOv5s, YOLOv5m, and YOLOv5l.if other models are needed ,... I will make sure to add them if needed.
+# Vehicle Detection Implemented with YOLOv5 and Paddle (Train, Test, Validate, Export) Based on paddlepaddle2.4.2
+* Vehicle Detection Implemented with YOLOv5 and Paddle, Including trainning and testing, validating end Export the model.
+* This project provides many pre-trained models about yolov5 namely YOLOv5s, YOLOv5m, and so on.if the model not exits, it will download automaticlly.
 * This project classifies vehicles into four categories:['car', 'bus', 'van', 'others']
 * VisulDL service tool can be used to visualize and output various training data in real-time, for example: visualdl --log_dir vsl_dir --port 8080 
 * and then you can open a web browser and enter localhost:8080 to view the training data and curves in real-time
@@ -22,15 +22,16 @@ pip install -r requirements.txt
 ```
 to avoid a big change, the dependencies are as follows:
 ```angular2html
-python==3.7.4
-paddlepaddle-GPU==2.2.2(GPU is better namely paddlepaddle-GPU,you can choose any type of you want to install it like conda or pip)
-GPUtil==1.4.0
+python==3.9.16
+paddlepaddle-GPU==2.4.2(GPU is better namely paddlepaddle-GPU,you can choose any type of you want to install it like conda or pip)
+visualdl==2.5.1
+albumentations==1.3.0
 ```
 
 ## 2. Train Model
 ### 1. Data and Dataset Preparation
 * Downloading the [VOCData and weights for four types of vehicle](https://pan.baidu.com/s/1g9iPMoem3XJkQC1gdUW23g?pwd=8mw3) due to the storage of github.
-* After the unzip, move the VOCData.zip to path "/work/VOCData/" and move the yolov5s.pdparams (the model which you need) to the path "/work/weights/"
+* After the unzip, move the VOCData.zip to path "/work/VOCData/" and delete other files like "yolovx.pdparams" since it have been out of date .
 * Execute the following code snippets to extract and move the dataset to the location consistent with the one set in code.
 ```commandline
 unzip -q ../data/VOCData.zip -d ./
@@ -47,7 +48,7 @@ python /voc2yolo.py
 
 ## 2. Start to train
 ### Before Train
-* To make your project work successfully,you should install the [Arial.ttf](https://github.com/GuoQuanhao/YOLOv5-Paddle/releases/download/v1.0/Arial.ttf),and move it to you path .config/yolov5_dir, specifilly in utils.general.py file's function namely **user_config_dir**
+* To make your project work successfully,you should install the [Arial.ttf](https://github.com/GuoQuanhao/YOLOv5-Paddle/releases/download/v1.0/Arial.ttf),and move it to you path ```~/.config/yolov5_dir```, specifilly in utils.general.py file's function namely **user_config_dir**
 ### 2.2 training the model
 My local machine is nuvo-8108GC 2080 Super and the other informations like memory are as follows:
 ```
@@ -74,7 +75,7 @@ My local machine is nuvo-8108GC 2080 Super and the other informations like memor
 * as my machine's memory just occupy almost 7900M so I choose my batch-size equal to 32 is fit
 the code snippets are :
 ```commandline
-python train.py --img 640 --batch 32 --epochs 64 --data ./data/vehicle.yaml --cfg ./models/yolov5s.yaml --weights ./weights/yolov5s.pdparams
+python train.py --img 640 --batch 16 --epochs 64 --data ./data/vehicle.yaml --cfg ./models/yolov5s.yaml --weights ./weights/yolov5s.pdparams
 ```
 
 **Command Line Parameter Explanation：**
@@ -105,7 +106,29 @@ python val.py --img 640 --data ./data/vehicle.yaml --cfg ./model/yolov5s.yaml --
 ## 4. Model Inference
 Type the following command line code 
 ```commandline
-python detect.py --cfg ./models/yolov5s.yaml --weights ./runs/train/exp/weights/best.pdparams --source ./data/images/
+python detect.py --data ./data/vehicle.yaml --cfg ./models/yolov5s.yaml --weights ./runs/train/exp/weights/best.pdparams --source ./data/images/
 ```
 * and you can get the output in "./runs/detect/expx", expx,the last "x" will output you console, maybe 1,  2 and so on
+
+## 5. Model Export(paddle inference,onnx, engine, paddle lite, openvino)
+Type the following code to convert it to paddle inference .
+```shell
+python export.py --weights yolov5n.pdparams --include paddleinfer 
+```
+Type the following code to convert it to onnx .
+```shell
+python export.py --weights yolov5n.pdparams --include onnx
+```
+Type the following code to convert it to engine .
+```shell
+python export.py --weights yolov5n.pdparams --include engine
+```
+Type the following code to convert it to openvino .
+```shell
+python export.py --weights yolov5n.pdparams --include openvino
+```
+Type the following code to convert it to paddlelite .
+```shell
+python export.py --weights yolov5n.pdparams --include paddlelite
+```
 #### If the performance is acceptable, you can apply this model(./runs/train/exp/weights/best.pdparams) to your own project.
