@@ -106,7 +106,7 @@ python val.py --img 640 --data ./data/vehicle.yaml --cfg ./model/yolov5s.yaml --
 ## 4. Model Inference
 Type the following command line code 
 ```commandline
-python detect.py --data ./data/vehicle.yaml --cfg ./models/yolov5s.yaml --weights ./runs/train/exp/weights/best.pdparams --source ./data/images/
+python detect.py --weights ./runs/train/exp/weights/best.pdparams --source ./data/images/test.jpg
 ```
 * and you can get the output in "./runs/detect/expx", expx,the last "x" will output you console, maybe 1,  2 and so on
 
